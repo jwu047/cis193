@@ -100,6 +100,12 @@ img {
     text-decoration: none;
 }
 
+.site_logo {
+    height: 30px;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
 .btn {
     position: relative;
     top: -1px;
