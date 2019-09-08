@@ -100,10 +100,19 @@ img {
     text-decoration: none;
 }
 
-.site_logo {
-    height: 30px;
-    -ms-flex-order: 1;
-    order: 1;
+
+.site-logo {
+    height: 50px;
+    width: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    background-coor: #fff;
+}
+
+@media (max-width: 992) {
+    body navbar container site-logo {
+        padding-top: 18px;
+    }
 }
 
 .btn {
