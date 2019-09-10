@@ -137,10 +137,14 @@ footer.footer {
   color: #007bff;
 }
 
-
+/* preserves background color while shrinking dropdown */
+.container-fluid {
+  background-color: #f8f9fa;
+}
 /* navbar inner text */
 .dropdown-menu>li>a {
   color: #007bff;
+  z-index: 1;
 }
 
 /* used for rating stars */
