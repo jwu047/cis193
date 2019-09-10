@@ -141,6 +141,7 @@ footer.footer {
 .container-fluid {
   background-color: #f8f9fa;
 }
+
 /* navbar inner text */
 .dropdown-menu>li>a {
   color: #007bff;
@@ -159,13 +160,22 @@ footer.footer {
 }
 
 /* static positions of navbar elements after menu show */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.open {
+  position: initial;
+}
 .dropdown-menu.show {
   position: absolute;
 }
 
 /* static height, in front of carousel */
 .navbar {
-  height: 50px;
   z-index: 1;
 }
 
+.showcase {
+  background-color: #fff;
+}
