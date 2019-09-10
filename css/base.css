@@ -145,7 +145,6 @@ footer.footer {
 /* navbar inner text */
 .dropdown-menu>li>a {
   color: #007bff;
-  z-index: 1;
 }
 
 /* used for rating stars */
@@ -163,19 +162,16 @@ footer.footer {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
-.open {
-  position: initial;
-}
-.dropdown-menu.show {
-  position: absolute;
-}
+
 
 /* static height, in front of carousel */
 .navbar {
   z-index: 1;
 }
 
-.showcase {
-  background-color: #fff;
+/* easy to see dropdown items without scroll on boostrap overflow-y: auto */
+.navbar-collapse.in {
+  overflow-y: visible;
 }
