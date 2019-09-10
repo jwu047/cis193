@@ -127,6 +127,7 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+/* navbar text */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>.active>a,
@@ -136,10 +137,31 @@ footer.footer {
   color: #007bff;
 }
 
+
+/* navbar inner text */
 .dropdown-menu>li>a {
   color: #007bff;
 }
 
+/* used for rating stars */
 .gold-text {
   color: #FFD700;
 }
+
+/* hover option */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+}
+
+/* static positions of navbar elements after menu show */
+.dropdown-menu.show {
+  position: absolute;
+}
+
+/* static height, in front of carousel */
+.navbar {
+  height: 50px;
+  z-index: 1;
+}
+
