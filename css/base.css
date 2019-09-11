@@ -130,6 +130,11 @@ footer.footer {
 }
 
 /* navbar text */
+.navbar .dropdown-menu a {
+  font-size: 14px;
+}
+
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>.active>a,
@@ -171,6 +176,7 @@ footer.footer {
 .navbar {
   z-index: 1;
 }
+
 
 /* easy to see dropdown items without scroll on boostrap overflow-y: auto */
 .navbar-collapse.in {
@@ -216,53 +222,33 @@ footer.footer {
   list-style: none;
 }
 
-.modal-dialog.cascading-modal
-.modal-c-tabs
-.md-tabs {
-  margin: -1.5rem 1rem 0 1rem;
-  display: flex;
+.nav-tabs>li>a {
+  margin-right: 0px;
 }
 
-.md-tabs {
-  border: 0;
-  padding: .7rem;
-  z-index: 1;
-  position: relative;
-  border-radius: .45rem;
+/* login button */
+.btn {
+  text-transform: none!important;
+  box-shadow: none;
+  font-size: 14px;
 }
-
-.md-tabs .nav-link {
-  transition: all .4s;
-  border: 0;
-  color: #fff !important;
-}
-
-.md-form {
-  position: relative;
-  margin-top: 1.5re,;
-  margin-bottom: 1.5rem;
-}
-
-.md-form-labl {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform .2s ease-out, color .2s ease-out;
-  transform-origin: translateY(12px);
-  cursor: text;
-  color: #757575;
-}
-
-.modal-dialog.cascading-modal .modal-body, .modal-dialog.cascading-modal .modal-footer {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #616161;
-}
-
+/* colors and borders */
 .btn-outline-info {
-  color: #007bff;
+  border: 2px solid #007bff!important;
+  color: #007bff!important;
 }
 
-.modal-footer > div > p > a {
-  color: #007bff;
+/* aligns navbar after mdnbootstrap */
+.btn {
+  margin: 0;
+}
+
+.btn-info{
+  background-color: #007bff!important;
+  color: #fff;
+}
+
+/* Realign text in signup/login modal */
+a.waves-effect, a.waves-light {
+  display: inline;
 }
