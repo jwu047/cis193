@@ -167,7 +167,6 @@ footer.footer {
   z-index: 1;
 }
 
-
 /* static height, in front of carousel */
 .navbar {
   z-index: 1;
@@ -176,4 +175,94 @@ footer.footer {
 /* easy to see dropdown items without scroll on boostrap overflow-y: auto */
 .navbar-collapse.in {
   overflow-y: visible;
+}
+
+/* modal-backdrop fade in behind the modal */
+.modal-backdrop {
+  z-index: 0;
+}
+
+/* styles the signup/login modal */
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+
+.modal-dialog.cascading-modal .modal-c-tabs .md-tabs li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.modal-dialog.cascading-modal
+.modal-c-tabs
+.md-tabs {
+  margin: -1.5rem 1rem 0 1rem;
+  display: flex;
+}
+
+.md-tabs {
+  border: 0;
+  padding: .7rem;
+  z-index: 1;
+  position: relative;
+  border-radius: .45rem;
+}
+
+.md-tabs .nav-link {
+  transition: all .4s;
+  border: 0;
+  color: #fff !important;
+}
+
+.md-form {
+  position: relative;
+  margin-top: 1.5re,;
+  margin-bottom: 1.5rem;
+}
+
+.md-form-labl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .2s ease-out, color .2s ease-out;
+  transform-origin: translateY(12px);
+  cursor: text;
+  color: #757575;
+}
+
+.modal-dialog.cascading-modal .modal-body, .modal-dialog.cascading-modal .modal-footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #616161;
+}
+
+.btn-outline-info {
+  color: #007bff;
+}
+
+.modal-footer > div > p > a {
+  color: #007bff;
 }
