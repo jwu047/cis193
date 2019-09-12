@@ -134,14 +134,19 @@ footer.footer {
   font-size: 14px;
 }
 
-
+.nav
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a,
 .nav.navbar-nav.navbar-right li a {
-  color: #007bff;
+  color: #4285f4;
+}
+
+/* navbar dropdown items */
+.navbar .dropdown-menu a {
+  color: #4285f4!important;
 }
 
 /* preserves background color while shrinking dropdown */
@@ -151,7 +156,7 @@ footer.footer {
 
 /* navbar inner text */
 .dropdown-menu>li>a {
-  color: #007bff;
+  color: #4285f4;
 }
 
 /* used for rating stars */
@@ -177,53 +182,9 @@ footer.footer {
   z-index: 1;
 }
 
-
-/* easy to see dropdown items without scroll on boostrap overflow-y: auto */
-.navbar-collapse.in {
-  overflow-y: visible;
-}
-
 /* modal-backdrop fade in behind the modal */
 .modal-backdrop {
   z-index: 0;
-}
-
-/* styles the signup/login modal */
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.2);
-  border-radius: .3rem;
-  outline: 0;
-}
-
-.modal-dialog.cascading-modal .modal-c-tabs .md-tabs li {
-  flex: 1;
-  text-align: center;
-}
-
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
-
-.nav li {
-  list-style: none;
-}
-
-.nav-tabs>li>a {
-  margin-right: 0px;
 }
 
 /* login button */
@@ -234,8 +195,8 @@ footer.footer {
 }
 /* colors and borders */
 .btn-outline-info {
-  border: 2px solid #007bff!important;
-  color: #007bff!important;
+  border: 2px solid #4285f4!important;
+  color: #4285f4!important;
 }
 
 /* aligns navbar after mdnbootstrap */
@@ -243,12 +204,32 @@ footer.footer {
   margin: 0;
 }
 
+.btn:active, .btn:focus, .btn:hover {
+  box-shadow: 0 0 0;
+}
+
 .btn-info{
-  background-color: #007bff!important;
+  background-color: #4285f4!important;
   color: #fff;
 }
 
 /* Realign text in signup/login modal */
 a.waves-effect, a.waves-light {
   display: inline;
+}
+
+.nav-tabs>li>a {
+  margin: 0px!important;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  background-color: #fff;
+  color: #4285f4!important;
+}
+
+/* overwrite bg */
+.bg-light {
+  background-color: #f8f9fa !important;
 }
